@@ -2,15 +2,18 @@
 %
 is_server = 1;
 
-dataset = 'voc2012';  %'coco', 'voc2012'
+dataset = 'high_brown';  %'coco', 'voc2012', 'high_brown'
 
 if is_server
   if strcmp(dataset, 'voc2012')
-    img_folder  = '../../../rmt/data/pascal/VOCdevkit/VOC2012/JPEGImages'
+    img_folder  = '../../../rmt/data/pascal/VOCdevkit/VOC2012/JPEGImages';
     save_folder = '../../../rmt/data/pascal/VOCdevkit/VOC2012/PPMImages';
   elseif strcmp(dataset, 'coco')
     img_folder  = '../../../rmt/data/coco/JPEGImages';
     save_folder = '../../../rmt/data/coco/PPMImages';
+  elseif strcmp(dataset, 'high_brown')
+    img_folder  = '../../../rmt/data/high_brown/JPEGImages';
+    save_folder = '../../../rmt/data/high_brown/PPMImages';
   end
 else
   img_folder = '../img';
