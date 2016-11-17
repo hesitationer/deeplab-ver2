@@ -34,6 +34,8 @@ if strcmp(dataset, 'voc12')
   seg_res_dir = [save_root_folder '/results/VOC2012/'];
 elseif strcmp(dataset, 'coco')
   seg_res_dir = [save_root_folder, '/results/COCO2014/'];
+elseif strcmp(dataset, 'high_brown')
+  seg_res_dir = [save_root_folder, '/results/high_brown/'];
 else
   error('Wrong dataset!');
 end
