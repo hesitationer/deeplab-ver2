@@ -45,8 +45,8 @@ pos_x_std      = 3;
 
 
 %
-dataset    = 'voc12';  %'voc12', 'coco'
-trainset   = 'train_aug';      % not used
+dataset    = 'high_brown';  %'voc12', 'coco'
+trainset   = 'train';      % not used
 testset    = 'val';            %'val', 'test'
 
 model_name = 'deeplab_largeFOV';
